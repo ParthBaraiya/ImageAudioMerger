@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Audio Video Merger</title>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+
+    <script src="./jquery-3.4.1.min.js"></script>
+
+    <!-- javascript file for procedure oriented method -->
+    <!-- <script src="./dataManager.js"></script> -->
+
+    <!-- javascript file for object oriented method -->
+    <script src="./dataManagerObjectOriented.js"></script>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Uncomment this block for procedure oriented method -->
+    <!-- <div>
+        <form>
+
+            <div id="image-upload" onclick="OpenFileUpload(event, 'image', this)" ondragover="dragOverHandler(event)"
+                ondrop="DragAndDropUpload(event, 'image', this)">
+                <p>Click to upload Image files or Drag and Drop Files here.</p>
+            </div>
+
+            <div id="image-upload" onclick="OpenFileUpload(event, 'audio', this)" ondragover="dragOverHandler(event)"
+                ondrop="DragAndDropUpload(event, 'audio', this)">
+                <p>Click to upload Audio files or Drag and Drop Files here.</p>
+            </div>
+
+        </form>
+    </div> -->
+
+    <!-- Uncomment this block for Object oriented method -->
+    <div>
+        <form>
+
+            <div id="image-upload">
+                <p>Click to upload Image files or Drag and Drop Files here.</p>
+            </div>
+
+            <div id="audio-upload">
+                <p>Click to upload Audio files or Drag and Drop Files here.</p>
+            </div>
+
+        </form>
+        <script>
+            var uploader = new Uploader(document.getElementById("image-upload"), document.getElementById("audio-upload"));
+        </script>
+    </div>
+
+</body>
+
+</html>
